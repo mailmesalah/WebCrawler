@@ -1,0 +1,16 @@
+﻿<Window x:Class="WebCrawler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebCrawler"
+        mc:Ignorable="d"
+        Title="Crawl Web" Height="450" Width="465">
+    <Grid>
+        <Label Content="1. Provide Base Url in the first text box.&#xD;&#xA;2. Provide Path names in the Paths text block.&#xD;&#xA;3. Provide extensions in the Extension text block." HorizontalAlignment="Center" Height="99" Margin="0,10,0,0" VerticalAlignment="Top" Width="445"/>
+        <TextBox x:Name="txtUrl" Text="Url" HorizontalAlignment="Center" Margin="0,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445" Height="27" FontWeight="Bold" AutoWordSelection="True"/>
+        <Button x:Name="btnCrawl" Content="Crawl" HorizontalAlignment="Center" Height="37" Margin="0,358,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
+        <TextBox x:Name="txtPaths" Text="Paths" HorizontalAlignment="Center" Margin="0,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445" Height="71" FontWeight="Bold" AutoWordSelection="True"/>
+        <TextBox x:Name="txtExtensions" Text="Extensions" HorizontalAlignment="Center" Margin="0,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="445" Height="71" FontWeight="Bold" AutoWordSelection="True"/>
+    </Grid>
+</Window>
